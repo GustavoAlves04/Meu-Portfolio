@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon/icons8-web-development-100.ico" type="image/x-icon">
+    <title>Portfólio | Gustavo Alves - Desenvolvedor Front-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo"><span>
+                <i class="fa-sharp fa-solid fa-less-than"></i> Alves <i class="fa-solid fa-code"></i>
+            </span></a>
+        <div class="bx bx-menu" id="menu-icone"></div>
+
+        <ul class="navlista">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </header>
+
+
+
+    <section class="home" id="home">
+        <div class="home-texto">
+            <h1 id="simpleUsage">Olá, eu sou<br><span>Gustavo</span> Alves,<br>Desenvolvedor Web.
+            </h1>
+            <p>Desenvolvedor Front-End.</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/gustavo-alves-922931261/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://github.com/GustavoAlves04" target="_blank"><i class="fa-brands fa-square-github"></i></i></a>
+                <a href="https://www.instagram.com/gustavo_allves04/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></i></a>
+            </div>
+        </div>
+        <div class="animacao-home"><img src="programador.svg" alt="programador animação">
+        </div>
+    </section>
+
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-img" data-aos="fade-left">
+            <img src="./img/Foto-Perfil (1).jpg">
+        </div>
+
+        <div class="sobre-texto" data-aos="fade-left">
+            <h2>Sobre Mim</h2>
+            <h5><span>Desenvolvedor Web</span></h5>
+            <p>Meu nome é Gustavo Alves, tenho 18 anos e desde criança eu sou apaixonado por computador.<br><br>Sempre
+                quis trabalhar
+                nessa
+                área. Não sabia muito bem em que trabalhar na parte de computação até conhecer a
+                programação, foi então que me apaixonei por desenvolver, quero expandir cada vez mais meus
+                conhecimentos
+                e sempre procurar melhorar.
+            </p>
+            <a href="./img/Curriculo.png" download="Currículo Gustavo Alves" class="btn">Download CV</a>
+        </div>
+
+    </section>
+
+
+
+    <section class="habilidades" id="habilidades">
+
+        <div class="habilidades-texto" data-aos="fade-up">
+            <h2>Habilidades</h2>
+        </div>
+    </section>
+
+
+
+    <section class="projetos" id="projetos" data-aos="fade-down">
+        <div class="projetos-texto">
+            <h2>Projetos</h2>
+        </div>
+        <div class="projetos-conteiner"></div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+        new TypeIt("#simpleUsage", {
+            strings: "",
+            speed: 40,
+            waitUntilVisible: true,
+        }).go();
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+</body>
+
+</html>
