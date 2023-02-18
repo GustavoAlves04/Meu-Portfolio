@@ -202,11 +202,45 @@ section{
     text-align: center;
     font-size: var(--h2-font);
     color: #fff;
+    font-weight: 700;
 }
 
+.habilidades-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.habilidades-container img{
+    height: 130px;
+    position: relative;
+    margin-top: 150px;
+    box-shadow: 5px 5px 10px #50230f;
+    border-radius: 20px;
+}
+
+.container img:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+
+.container p{
+    text-align: center;
+    font-size: var(--p-font);
+    color: #fff;
+    font-weight: 700;
+}
 
 .projetos{
     width: 100%;
     height: 100vh;
     background-color: #aa6547;
+}
+
+.projetos-texto h2{
+    font-size:var(--h2-font);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
 }
