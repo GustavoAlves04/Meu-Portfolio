@@ -253,6 +253,12 @@ section{
     margin-top: 5rem;
 }
 
+.container-projeto{
+    background-color: #7e4228;
+    height: 45vh;
+    border-radius: 8px;
+}
+
 .row{
     position: relative;
     overflow: hidden;
