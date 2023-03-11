@@ -317,3 +317,17 @@ section{
 .row:hover .layer{
     height: 100%;
 }
+
+.finish-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.finish-text h6{
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
