@@ -348,3 +348,10 @@ section{
 .finish-text button:hover{
     transform: translateY(-2px);
 }
+
+.paragrafo-explicacao{
+    font-family: 400;
+    font-size: 1rem;
+    color: #ebac91;
+    margin-left: 10px;
+}
