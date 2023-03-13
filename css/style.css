@@ -333,7 +333,18 @@ section{
 }
 
 .finish-text i{
-   color: #fff;
-   cursor: pointer;
    font-size: 1.1rem;
+}
+
+.finish-text button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    transition: .4s ease;
+    color: white;
+}
+
+.finish-text button:hover{
+    transform: translateY(-2px);
 }
