@@ -209,19 +209,24 @@ section{
 }
 
 .habilidades-container img{
-    height: 130px;
+    height: 115px;
     position: relative;
     box-shadow: 5px 5px 10px #50230f;
     border-radius: 20px;
+    z-index: 1;
 }
 
+.container{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
 .container img:hover{
     transform: scale(1.1);
     transition: .6s;
 }
 
 .container p{
-    text-align: center;
     font-size: var(--p-font);
     color: #fff;
     font-weight: 700;
@@ -532,7 +537,7 @@ section{
     
     .sobre-texto p{  
         font-size: var(--p-font);
-        line-height: 1.3rem;
+        line-height: 1rem;
     }
     .habilidades{
         height: 100%;
@@ -540,4 +545,12 @@ section{
     .container{
         display: grid; 
     }
-}   
+    .social{
+        text-align: center;
+    }
+}
+@media (max-width: 320px){
+    .social{
+        margin-left: 20px;
+    }
+}
