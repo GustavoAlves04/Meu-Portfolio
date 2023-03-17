@@ -71,8 +71,8 @@ span{
 }
 
 #menu-icone{
-    font-size: 26px;
-    color: var(--text-color);
+    font-size: 1.625rem;
+    color: var(--secound-bg-color);
     cursor: pointer;
     z-index: 10001;
     display: none;
@@ -94,7 +94,6 @@ section{
 .home-texto h1{
     font-size: var(--big-font);
     color: white;
-    line-height: 1.2;
     font-weight: 800;
     letter-spacing: 1px;
     padding-bottom: 10px;
@@ -106,8 +105,6 @@ section{
 }
 
 .animacao-home{
-    justify-content: center;
-    align-items: center;
     width: 63vh;
     padding-left: 100px;
 }
@@ -122,7 +119,7 @@ section{
     display: inline-block;
     color: #50230f;
     margin-right: 25px;
-    font-size: 35px;
+    font-size: 2.188rem;
 }
 .home .social :hover{
     transform: scale(1.2);
@@ -133,19 +130,17 @@ section{
 .sobre{
     height: 100vh;
     background-color: #aa6547;
-    display: flex;
-    justify-content: center;
-    gap: 9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     align-items: center;
-    
+    grid-gap: 2rem;
 }
 
 .sobre-img img{
-    max-width: 96%;
-    width: auto;
+    max-width: 100%;
+    width: 350px;
     height: auto;
-    border-radius: 15px;
-    z-index: 1;
+    border-radius: 10px;
 }
 
 .sobre-texto{
@@ -156,7 +151,7 @@ section{
     font-size: var(--h2-font);
     color: white;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -170,7 +165,7 @@ section{
     color: white;
     font-size: var(--p-font);
     font-weight: 50;
-    line-height: 28px;
+    line-height: 1.75rem;
     margin-bottom: 45px;
 }
 
@@ -202,20 +197,20 @@ section{
     text-align: center;
     font-size: var(--h2-font);
     color: #fff;
+    margin-bottom: 70px;
     font-weight: 700;
 }
 
 .habilidades-container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .habilidades-container img{
     height: 130px;
     position: relative;
-    margin-top: 150px;
     box-shadow: 5px 5px 10px #50230f;
     border-radius: 20px;
 }
@@ -255,7 +250,7 @@ section{
 
 .container-projeto{
     background-color: #7e4228;
-    height: 45vh;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -291,7 +286,7 @@ section{
 }
 
 .layer h5{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 15px;
     color: #fff;
@@ -300,7 +295,7 @@ section{
 .layer i{
     color: #7e4228;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     background: white;
     width: 60px;
     height: 60px;
@@ -355,3 +350,194 @@ section{
     color: #ebac91;
     margin-left: 10px;
 }
+
+@media (max-width: 1440px){
+    :root{
+        --big-font: 2.2rem;
+        --h2-font: 2.4rem;
+        --p-font: 1.4rem;
+    }
+    .sobre-img img{
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+        border-radius: 15px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1024px){
+    header{
+        padding: 18px 4%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 10px 4%;
+        transition: .2s;
+    }
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    :root{
+        --big-font: 2.2rem;
+        --h2-font: 2.4rem;
+        --p-font: 1rem;
+    }
+    .home-texto{
+        text-align: center;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+    .animacao-home{
+        padding-left: 50px;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
+    .sobre{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .sobre-img{
+        text-align: center;
+    }
+    .sobre-img img{
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+    }
+    .sobre-texto{
+        text-align: center;
+    }
+    
+    .sobre-texto h2{
+        font-size: var(--h2-font);
+        color: white;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .sobre-texto h5{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .sobre-texto p{  
+        color: white;
+        font-size: var(--p-font);
+        font-weight: 50;
+        line-height: 1.75rem;
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 990px){
+    .home{
+        height: 100vh;
+        width: 100%;
+    }
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+    .sobre-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sobre-img img{
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icone{
+        display: initial;
+    }
+    .navlista{
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .30s;
+    }
+    .navlista a{
+        display: block;
+        padding: 1.1rem;
+        margin: 1.3rem;
+        border-left: 2px solid var(--text-color);
+    }
+    .navlista a:hover{
+        background: var(--main-color);
+    }
+    .navlista a::after{
+        display: none;
+    }
+    .navlista.active {
+        top: 100%;
+    }
+    .sobre-img img{
+        max-width: 100%;
+        width: 350px;
+        height: auto;
+    }
+    .habilidades-container img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px){
+    .habilidades-container img{
+        height: 6.25rem;
+        display: grid;
+    }
+}
+@media (max-width: 452px){
+    .home-texto h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 425px){
+    .habilidades-texto h2{
+        font-size: 2.2rem;
+    }
+    .animacao-home{
+        padding-left: 20px;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
+    .sobre-texto{
+        margin-top: 2rem;
+    }
+    
+    .sobre-texto h2{
+        font-size: var(--h2-font);
+        line-height: 1.2rem;
+    }
+    
+    .sobre-texto h5{
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    
+    .sobre-texto p{  
+        font-size: var(--p-font);
+        line-height: 1.3rem;
+    }
+    .habilidades{
+        height: 100%;
+    }
+    .container{
+        display: grid; 
+    }
+}   
