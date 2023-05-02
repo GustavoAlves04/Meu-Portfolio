@@ -266,7 +266,7 @@ section{
     width: 90%;
     margin: 27px auto 17px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 28px;
     color: #ffffff;
 }
@@ -274,7 +274,7 @@ section{
     width: 90%;
     text-align: justify;
     margin: 0px auto;
-    font-weight: 300;
+    font-weight: 700;
     color: #ffffff;
 }
 .tecnologias{
@@ -304,6 +304,7 @@ section{
     gap: 15px;
     font-size: 16px;
     color: #ffffff;
+    font-weight: 700;
 }
 .links-projetos a:hover{
     transform: scale(1.1);
