@@ -206,6 +206,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     align-items: center;
     gap: 2.5rem;
+    margin-top: 15px;
 }
 
 .habilidades-container img{
@@ -223,6 +224,13 @@ section{
 .container img:hover{
     transform: scale(1.1);
     transition: .6s;
+}
+
+.container h6{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 .projetos{
