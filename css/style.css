@@ -164,7 +164,7 @@ section{
 .sobre-texto p{  
     color: white;
     font-size: var(--p-font);
-    font-weight: 50;
+    font-weight: 700;
     line-height: 1.75rem;
     margin-bottom: 45px;
 }
@@ -209,17 +209,16 @@ section{
     margin-top: 15px;
 }
 
-.habilidades-container img{
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container img{
     height: 115px;
     position: relative;
     box-shadow: 5px 5px 10px #50230f;
     border-radius: 20px;
-}
-
-.container{
-    display: grid;
-    align-items: center;
-    text-align: center;
 }
 .container img:hover{
     transform: scale(1.1);
@@ -280,7 +279,6 @@ section{
 }
 .card-projetos p{
     width: 90%;
-    text-align: justify;
     margin: 0px auto;
     font-weight: 700;
     color: #ffffff;
@@ -302,7 +300,7 @@ section{
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin: 30px auto 0px;
+    margin-top: 30px;
 }
 
 .links-projetos a{
@@ -554,6 +552,7 @@ section{
     .sobre-texto p{  
         font-size: var(--p-font);
         line-height: 1rem;
+        font-weight: 700
     }
     .habilidades{
         height: 100%;
